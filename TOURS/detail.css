@@ -1,0 +1,118 @@
+.stars {
+    position: relative;
+    white-space: nowrap;
+}
+.overlay {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+svg {
+    fill: gold;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .lui,
+  .toi {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .toi {
+    right: 12px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .lui:hover,
+  .toi:hover {
+    background-color: rgba(127, 127, 127, 0.8);
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(69, 70, 70);
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: white;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  @media (max-width:500px){
+    .run3{
+      width: 100%;
+      margin-left: 13px;
+    }
+      }

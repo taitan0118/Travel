@@ -1,0 +1,32 @@
+<div class="container">
+        <div class="row" ng-show="isLogin">
+            
+                <div class="col-sm-12 col-md-5 col-lg-4 mt-4" style="color: rgb(118, 118, 118); border-radius: 5%; box-shadow: 0 0 10px 0 white; padding: 20px;">    
+                    <div class="mb-3">  
+                        <label for="exampleFormControlInput1" class="form-label">Họ Tên</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Nhập mật khẩu mới" ng-model="info.name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Số Điện Thoại</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0123456789"ng-model="info.sdt" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Nhập mật khẩu cũ" ng-model="info.email">
+                    </div>            
+                    <div class="mb-3 mt-3">
+                        <button type="button" class="btn btn-success" style="width: 100%;" ng-click="changthontin()">Lưu thông tin</button>
+                    </div>
+                </div>
+                
+          
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center"  style=" padding: 20px;">
+                <img src="../imageASM/LOGO.jpg" style="border-radius: 50%; width: 150px;" alt="">
+                <br>
+                <button type="button" class="btn btn-outline-secondary mt-4">Chọn ảnh</button>
+            </div>
+        </div>
+
+</div>

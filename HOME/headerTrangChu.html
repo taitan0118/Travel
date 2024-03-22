@@ -1,0 +1,111 @@
+<div class="container">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #FFF">
+          <div class="container-fluid">
+            <!-- nut respon -->
+            <a class="navbar-brand m" href="trangchu.html"><img src="/ASM/imageASM/LOGO.jpg" alt="" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!bodytrangchu">
+                    <i class="fa-solid fa-house"></i>
+                    TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!tour">
+                    <i class="fa-solid fa-location-dot"></i>
+                    CÁC CHUYẾN DU LỊCH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!diemden">
+                    <i class="fa-solid fa-plane"></i>
+                    ĐIỂM ĐẾN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!blog">
+                    <i class="fa-solid fa-blog"></i>
+                    BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!hotro">
+                    <i class="fa-solid fa-circle-question"></i>
+                    HỖ TRỢ</a>
+                </li>
+                <li class="nav-item dropdown" ng-hide="isLogin">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                      <i class="fa-solid fa-user"></i>
+                      TÀI KHOẢN</a>
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a class="dropdown-item" href="#!dangnhap">
+                              <i class="fa-solid fa-arrow-right"></i>
+                              Đăng nhập</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#!dangky">
+                              <i class="fa-solid fa-registered"></i>
+                              Đăng ký</a>
+                      </li>
+                     
+                  </ul>
+              </li>
+              <li class="nav-item dropdown" ng-show="isLogin">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-user"></i>
+                    {{info.sdt}}</a>
+                <ul class="dropdown-menu">
+                  
+                    <li>
+                        <a class="dropdown-item" href="#!hoso">
+                            <i class="fa-sharp fa-solid fa-folder"></i>
+                          
+                            Hồ sơ cá nhân</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#!doimatkhau">
+                            <i class="fa-solid fa-rotate"></i>
+
+                            Đổi mật khẩu</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" ng-click="dangxuat()">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Đăng xuất</a>
+                    </li>
+                  
+                </ul>
+            </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Tìm" aria-label="Search" ng-model="keySearch">
+                <button class="btn btn-outline-success" type="submit">Tìm</button>
+              </form>
+             
+              <button ng-show="isLogin" type="button" class="btn btn-outline-success position-relative" style="margin: 15px;" >
+                <a href="#!cart"><i
+                  class="fa-solid fa-cart-shopping" style="color: #f90070;"></i></a>
+                  
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
+                  {{tongsoluong()}}
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <div class="d-flex">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="trangchu.html" style="color: #f90070;">VN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="layout.html">EN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+</div>

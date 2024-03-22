@@ -1,0 +1,148 @@
+body {
+    padding: 0px;
+    margin: 0 auto;
+    background-color:white;
+}
+
+header {
+    position: relative  ;
+    
+}
+.demo :hover{
+    background-color: #fff;
+}
+.container >div>aside {
+  min-width: 30px;
+   
+}
+
+
+.shopping-mall {
+    font-variant: small-caps;
+}
+
+.shopping-mall>.h1 {
+    font-family: Impact;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    
+    margin: 0px;
+}
+
+.shopping-mall>.h5 {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+
+nav{
+    line-height: 30px;
+ 
+}
+
+.cart ul {
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;
+}
+.cart ul li a {
+    text-decoration: none;
+}
+
+.checked {
+    color: orange;
+  }
+
+footer{
+    height: 50px;
+   
+}
+.stars {
+    position: relative;
+    white-space: nowrap;
+}
+
+.overlay {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+svg {
+    fill: gold;
+}
+.banner{
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .Animation:hover .image {
+    opacity: 0.3;
+  }
+  
+  .Animation:hover .middle {
+    opacity: 1;
+  }
+  .Animation:hover .content {
+    opacity: 0.3;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    
+  } 
+  @media (max-width:500px){
+.run{
+  width: 100%;
+  margin-left: 20px;
+}
+.rin{
+  font-size: 13px;
+
+}
+  }

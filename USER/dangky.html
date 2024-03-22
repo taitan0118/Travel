@@ -1,0 +1,54 @@
+
+
+<body>
+    <div class="bg-img" style="background-image: url('/ASM/imageASM/banner1.jpg');">
+        <div class="container">
+            <div class="row">
+                <form name="frmBonus" >
+                    <div class="col-sm-12 col-md-5 col-lg-4 mt-4" style="background-color: rgb(255, 255, 255); color: rgb(82, 81, 81); border-radius: 5%;  padding: 20px;">
+                        <div class="text-center"><a href="#!bodytrangchu"><img style="border-radius: 50%;" src="/ASM/imageASM/LOGO.jpg"
+                                    alt="" width="60px"></a></div>
+                        <div class="form-group mb-3 mt-3">
+                            <label for="exampleFormControlInput1"  class="form-label">Họ Tên</label>
+                            <input  type="text" class="form-control" required name="txtFullname" id="name" placeholder="Họ tên của bạn" ng-model="info.name">
+                            <label ng-show="frmBonus.txtFullname.$invalid" class="text text-danger">Vui lòng nhập họ tên</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Số Điện Thoại</label>
+                            <input type="text" class="form-control" required name="numberphone" id="sdt" placeholder="0123456789" ng-model="info.sdt">
+                            <label ng-show="frmBonus.numberphone.$invalid" class="text text-danger">Vui lòng nhập số điện thoại</label>
+                        </div> 
+                        <div class="form-group mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control"required id="email" name="email"
+                                placeholder="name@example.com" ng-model="info.email">
+                                <label ng-show="frmBonus.email.$invalid" class="text text-danger">Vui lòng nhập đúng Email</label>
+                        </div>
+                        <div class=" form-group mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Mật Khẩu</label>
+                            <input type="password" class="form-control" required minlength="6" maxlength="12" id="pass"  name="password"
+                                placeholder="Mật Khẩu của bạn" ng-model="info.pass">
+                                <label ng-show="frmBonus.password.$invalid" class="text text-danger">Mật khẩu phải từ 6-12 ký tự</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nhập Lại Mật Khẩu</label>
+                            <input type="password" class="form-control" id="pass2"
+                                placeholder="Nhập Lại Mật Khẩu" required minlength="6" maxlength="12" name="pass2" ng-model="info.pass2">
+                                <label ng-show="frmBonus.pass2.$invalid" class="text text-danger">Mật khẩu phải từ 6-12 ký tự</label>
+                        </div>
+                        <div class="text-center"><a style="text-decoration: none; color: #f90070;" href="#!dangnhap">Đăng Nhập</a></div>
+                        <div class="mb-3 mt-3">
+                            <button type="button" class="btn btn-success" style="width: 100%;" ng-click="reg()">Đăng Ký</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="col-sm-12 col-md-5 col-lg-8 mt-4">
+                    <div class="pyro"><div class="before"></div><div class="after"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
