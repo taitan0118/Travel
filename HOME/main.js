@@ -237,7 +237,7 @@ app.controller("myCtrl", function ($scope, $rootScope, $routeParams, $http) {
 app.config(function ($routeProvider) {
   $routeProvider
     .when("bodytrangchu", {
-      templateUrl: "bodytrangchu.html?" + Math.random(),
+      templateUrl: "../HOME/bodytrangchu.html?" + Math.random(),
       controller: "myCtrl",
     })
     .when("/tour", {
@@ -285,7 +285,7 @@ app.config(function ($routeProvider) {
       controller: "myCtrl",
     })
     .otherwise({
-      templateUrl: "bodytrangchu.html",
+      templateUrl: "/HOME/bodytrangchu.html",
       controller: "myCtrl",
     });
 });
